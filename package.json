@@ -1,0 +1,23 @@
+{
+  "name": "forkify",
+  "version": "1.0.0",
+  "description": "forkify project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pmcmahon14/Forkify.git"
+  },
+  "author": "Patrick McMahon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pmcmahon14/Forkify/issues"
+  },
+  "homepage": "https://github.com/pmcmahon14/Forkify#readme",
+  "devDependencies": {
+    "webpack": "^4.30.0"
+  },
+  "dependencies": {}
+}
