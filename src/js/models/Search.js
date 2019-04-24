@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-export default class Seaarch {
+export default class Search {
     constructor(query) {
         this.query = query;
     }
