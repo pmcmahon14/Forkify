@@ -1,5 +1,6 @@
 import Search from './models/Search';
 import Recipe from './models/Recipe';
+import List from './models/List';
 import * as searchView from './views/searchView';
 import * as recipeView from './views/recipeView';
 import {elements, renderLoader, clearLoader} from './views/base';
@@ -70,7 +71,6 @@ const controlRecipe = async () => {
         try {
             //Get recipe data and parse ingredients
             await state.recipe.getRecipe();
-            console.log(state.recipe.ingredients);
             state.recipe.parseIngredients();
 
             //Calculate servings and time
@@ -105,5 +105,6 @@ elements.recipe.addEventListener('click', event => {
         state.recipe.updateServings('inc');
         recipeView.updateServingsIngredients(state.recipe);
     }
-    console.log(state.recipe);
 });
+
+window.l = new List();
