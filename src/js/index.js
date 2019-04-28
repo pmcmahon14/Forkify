@@ -8,6 +8,13 @@ import * as listView from './views/listView';
 import * as likesView from './views/likesView';
 import {elements, renderLoader, clearLoader} from './views/base';
 
+//TODO IMPLEMENT BUTTON TO DELETE ALL SHOPPING ITEMS
+//TODO IMPLEMENT FUNCTIONALITY TO MANUALLY ADD ITEMS TO SHOPPING LIST
+//TODO SAVE SHOPPING LIST DATA IN LOCAL STORAGE
+//TODO IMPROVE THE INGREDIENT PARSING ALGORITHM
+//TODO COME UP WITH AN ALGORITHM FOR CALCULATING THE AMOUNT OF SERVINGS
+//TODO IMPROVE ERROR HANDLING
+
 /* Global state of the app
 Search object
 Current recipe object
@@ -15,7 +22,6 @@ Shopping list object
 Liked recipes*/
 
 const state = {};
-window.state = state;
 
 /*SEARCH CONTROLLER*/
 
@@ -65,7 +71,6 @@ elements.searchResPages.addEventListener('click', event => {
 const controlRecipe = async () => {
     //Get ID from url
     const id = window.location.hash.replace('#', '');
-    console.log(id);
 
     if (id) {
         //Prepare UI for changes
@@ -213,5 +218,3 @@ elements.recipe.addEventListener('click', event => {
     }
 
 });
-
-window.l = new List();
